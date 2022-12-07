@@ -16,6 +16,8 @@
 		5AD9183C2941033D00078C26 /* PhotollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9183B2941033D00078C26 /* PhotollectionTests.swift */; };
 		5AD918462941033D00078C26 /* PhotollectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD918452941033D00078C26 /* PhotollectionUITests.swift */; };
 		5AD918482941033D00078C26 /* PhotollectionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD918472941033D00078C26 /* PhotollectionUITestsLaunchTests.swift */; };
+		5AD91886294107A700078C26 /* ImagesCollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD91885294107A700078C26 /* ImagesCollection.framework */; };
+		5AD91887294107A700078C26 /* ImagesCollection.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD91885294107A700078C26 /* ImagesCollection.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5AD91888294107A700078C26 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5AD91887294107A700078C26 /* ImagesCollection.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5AD918212941033C00078C26 /* Photollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AD918242941033C00078C26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +65,7 @@
 		5AD918412941033D00078C26 /* PhotollectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotollectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AD918452941033D00078C26 /* PhotollectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotollectionUITests.swift; sourceTree = "<group>"; };
 		5AD918472941033D00078C26 /* PhotollectionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotollectionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5AD91885294107A700078C26 /* ImagesCollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ImagesCollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AD91886294107A700078C26 /* ImagesCollection.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +101,7 @@
 				5AD9183A2941033D00078C26 /* PhotollectionTests */,
 				5AD918442941033D00078C26 /* PhotollectionUITests */,
 				5AD918222941033C00078C26 /* Products */,
+				5AD91884294107A700078C26 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,6 +186,14 @@
 			path = Configs;
 			sourceTree = "<group>";
 		};
+		5AD91884294107A700078C26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AD91885294107A700078C26 /* ImagesCollection.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -177,6 +204,7 @@
 				5AD9181D2941033C00078C26 /* Sources */,
 				5AD9181E2941033C00078C26 /* Frameworks */,
 				5AD9181F2941033C00078C26 /* Resources */,
+				5AD91888294107A700078C26 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
