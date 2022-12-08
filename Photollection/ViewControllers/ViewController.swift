@@ -8,18 +8,15 @@
 import UIKit
 import ImagesCollection
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-//        view.backgroundColor = .yellow
-        
-    }
+final class ViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        navigationController?.setViewControllers([ImagesCollectionViewController.loadFromXib(bundle: Bundle(for: ImagesCollectionViewController.self))], animated: false)
+        
+        let vc = ImagesCollectionViewController.loadFromXib(bundle: Bundle(for: ImagesCollectionViewController.self))
+        vc.title = "From https://picsum.photos"
+        
+        navigationController?.setViewControllers([vc], animated: false)
     }
 
 }

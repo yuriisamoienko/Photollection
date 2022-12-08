@@ -114,7 +114,6 @@
 				5AD9189129410EF600078C26 /* Views */,
 				5AD9188C29410BA600078C26 /* Xibs */,
 				5AD9188B29410B9800078C26 /* ViewControllers */,
-				5AD9188A29410B8B00078C26 /* Presenters */,
 			);
 			path = ImagesCollection;
 			sourceTree = "<group>";
@@ -133,13 +132,6 @@
 				5AD918662941073800078C26 /* ImagesCollection.h */,
 			);
 			path = _projectfiles;
-			sourceTree = "<group>";
-		};
-		5AD9188A29410B8B00078C26 /* Presenters */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presenters;
 			sourceTree = "<group>";
 		};
 		5AD9188B29410B9800078C26 /* ViewControllers */ = {
