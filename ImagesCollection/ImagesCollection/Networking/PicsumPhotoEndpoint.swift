@@ -9,9 +9,16 @@ import Foundation
 
 struct PicsumPhotoEndpoint: EndpointPl {
     
+    enum ImageMode {
+        case normal
+        case blurred(intense: UInt8) // min 1, max 10
+        case grayscaled
+    }
+    
     var id: UInt
     var width: UInt
     var height: UInt
+    var imageMode: ImageMode = .normal
     
     var baseUrl: String {
         "https://picsum.photos"
@@ -19,6 +26,21 @@ struct PicsumPhotoEndpoint: EndpointPl {
     
     var path: String {
         "id/\(id)/\(width)/\(height)"
+    }
+    
+    var params: [String: String] {
+        var result: [String: String] = [:]
+        switch imageMode {
+        case .grayscaled:
+            result["grayscale"] = ""
+        case let .blurred(intense):
+            result["blur"] = "\(min(10, max(1, intense)))"
+            
+        default:
+            break
+        }
+        
+        return result
     }
     
 }

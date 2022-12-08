@@ -40,7 +40,7 @@ actor FileDownloader: FileDownloaderPl {
         // Compute a path to the URL in the cache
         let cachedFile = cacheFolder
             .appendingPathComponent(
-                url.path.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? url.path,
+                url.absoluteString.urlEncoded(),
                 isDirectory: false
             )
         

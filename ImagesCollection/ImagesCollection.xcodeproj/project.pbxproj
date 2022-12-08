@@ -27,6 +27,7 @@
 		5AFA3DE329424A4200E878C4 /* UrlImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFA3DE229424A4200E878C4 /* UrlImageView.swift */; };
 		5AFA3DE629425D5600E878C4 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFA3DE529425D5600E878C4 /* Endpoints.swift */; };
 		5AFA3DE82942627A00E878C4 /* PicsumPhotoEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFA3DE72942627A00E878C4 /* PicsumPhotoEndpoint.swift */; };
+		5AFA3DEA29426CEF00E878C4 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFA3DE929426CEF00E878C4 /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		5AFA3DE229424A4200E878C4 /* UrlImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlImageView.swift; sourceTree = "<group>"; };
 		5AFA3DE529425D5600E878C4 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		5AFA3DE72942627A00E878C4 /* PicsumPhotoEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumPhotoEndpoint.swift; sourceTree = "<group>"; };
+		5AFA3DE929426CEF00E878C4 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 				5AD9189D29411B2D00078C26 /* NSObjectExtension.swift */,
 				5AD9189F29411BAE00078C26 /* NSErrorExtension.swift */,
 				5AD918B42942115F00078C26 /* FileManagerExtension.swift */,
+				5AFA3DE929426CEF00E878C4 /* StringExtension.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 			files = (
 				5AD918B0294209A200078C26 /* UIInterfaceOrientationValues.swift in Sources */,
 				5AD9189C29411AF200078C26 /* UICollectionViewExtension.swift in Sources */,
+				5AFA3DEA29426CEF00E878C4 /* StringExtension.swift in Sources */,
 				5AFA3DE629425D5600E878C4 /* Endpoints.swift in Sources */,
 				5AFA3DE329424A4200E878C4 /* UrlImageView.swift in Sources */,
 				5AD9189E29411B2D00078C26 /* NSObjectExtension.swift in Sources */,

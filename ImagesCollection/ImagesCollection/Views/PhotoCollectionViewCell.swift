@@ -21,7 +21,7 @@ final class PhotoCollectionViewCell: UICollectionViewCell {
     }
     
     func reset() {
-        imageView.reset()
+        imageView.image = UIImage(systemName: "doc.circle")
     }
     
     func set(imageUrl: URL) {

@@ -17,13 +17,8 @@ final class UrlImageView: UIImageView {
     }
     private var needUpdateImage = true
     
-    func reset() {
-        image = UIImage(systemName: "doc.circle")
-        needUpdateImage = true
-        imageUrl = nil
-    }
-    
     func set(imageUrl: URL?) {
+        needUpdateImage = true
         self.imageUrl = imageUrl
     }
     
