@@ -20,6 +20,8 @@
 		5AD918A029411BAE00078C26 /* NSErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9189F29411BAE00078C26 /* NSErrorExtension.swift */; };
 		5AD918AC2942035000078C26 /* DynamicCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD918AB2942035000078C26 /* DynamicCollectionViewFlowLayout.swift */; };
 		5AD918B0294209A200078C26 /* UIInterfaceOrientationValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD918AF294209A200078C26 /* UIInterfaceOrientationValues.swift */; };
+		5AD918B329420F8000078C26 /* FileDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD918B229420F8000078C26 /* FileDownloader.swift */; };
+		5AD918B52942115F00078C26 /* FileManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD918B42942115F00078C26 /* FileManagerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		5AD9189F29411BAE00078C26 /* NSErrorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSErrorExtension.swift; sourceTree = "<group>"; };
 		5AD918AB2942035000078C26 /* DynamicCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		5AD918AF294209A200078C26 /* UIInterfaceOrientationValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIInterfaceOrientationValues.swift; sourceTree = "<group>"; };
+		5AD918B229420F8000078C26 /* FileDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDownloader.swift; sourceTree = "<group>"; };
+		5AD918B42942115F00078C26 /* FileManagerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 		5AD918652941073800078C26 /* ImagesCollection */ = {
 			isa = PBXGroup;
 			children = (
+				5AD918B129420F5C00078C26 /* Helpers */,
 				5AD918AE2942099400078C26 /* Data Types */,
 				5AD918AD2942080600078C26 /* Layouts */,
 				5AD918962941196E00078C26 /* Extensions */,
@@ -164,6 +169,7 @@
 				5AD918982941198A00078C26 /* BundleExtension.swift */,
 				5AD9189D29411B2D00078C26 /* NSObjectExtension.swift */,
 				5AD9189F29411BAE00078C26 /* NSErrorExtension.swift */,
+				5AD918B42942115F00078C26 /* FileManagerExtension.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -190,6 +196,14 @@
 				5AD918AF294209A200078C26 /* UIInterfaceOrientationValues.swift */,
 			);
 			path = "Data Types";
+			sourceTree = "<group>";
+		};
+		5AD918B129420F5C00078C26 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5AD918B229420F8000078C26 /* FileDownloader.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,7 +323,9 @@
 				5AD9189E29411B2D00078C26 /* NSObjectExtension.swift in Sources */,
 				5AD918AC2942035000078C26 /* DynamicCollectionViewFlowLayout.swift in Sources */,
 				5AD9188F29410C0E00078C26 /* ImagesCollectionViewController.swift in Sources */,
+				5AD918B52942115F00078C26 /* FileManagerExtension.swift in Sources */,
 				5AD9189429410F2500078C26 /* PhotoCollectionViewCell.swift in Sources */,
+				5AD918B329420F8000078C26 /* FileDownloader.swift in Sources */,
 				5AD918992941198A00078C26 /* BundleExtension.swift in Sources */,
 				5AD918A029411BAE00078C26 /* NSErrorExtension.swift in Sources */,
 			);
