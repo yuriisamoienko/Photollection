@@ -11,8 +11,6 @@ private let reuseIdentifier = "PhotoCollectionViewCell"
 
 public final class ImagesCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
-    private let fileDownloader: FileDownloaderPl = FileDownloader() //TODO inject
-    
     override public func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,7 +37,7 @@ public final class ImagesCollectionViewController: UICollectionViewController, U
     
     
     private func numberOfItemsInSection(_ section: Int) -> Int {
-        return 5
+        return Int.max // kind of infinite scroll
     }
 
     /*
@@ -65,17 +63,13 @@ public final class ImagesCollectionViewController: UICollectionViewController, U
 
     override public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = try! collectionView.dequeueReusableCell(byType: PhotoCollectionViewCell.self, forIndexPath: indexPath)
+        cell.reset() // clear previous values
         
-        // Configure the cell
-        
-        Task {
-            guard let url =  URL(string: "https://picsum.photos/id/\(indexPath.row)/10/10"),
-                  let data = try? await fileDownloader.load(from: url),
-                  let image = UIImage(data: data)
-            else {
-                return
-            }
-            cell.set(image: image)
+        let cellSize = cell.frame.size
+        let urlString = "https://picsum.photos/id/\(indexPath.row)/\(Int(cellSize.width))/\(Int(cellSize.height))"
+
+        if let imageUrl = URL(string: urlString) {
+            cell.set(imageUrl: imageUrl)
         }
     
         return cell

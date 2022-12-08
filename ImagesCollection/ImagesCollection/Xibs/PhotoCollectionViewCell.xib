@@ -15,8 +15,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="242" height="149"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7Us-5d-qot">
-                        <rect key="frame" x="0.0" y="-1" width="242" height="149.66666666666669"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doc.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7Us-5d-qot">
+                        <rect key="frame" x="0.0" y="1" width="242" height="147.66666666666666"/>
                     </imageView>
                 </subviews>
             </view>
@@ -34,6 +34,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
+        <image name="doc.circle" catalog="system" width="128" height="123"/>
     </resources>
 </document>

@@ -13,6 +13,8 @@ protocol FileDownloaderPl {
 
 actor FileDownloader: FileDownloaderPl {
     
+    static let shared: FileDownloaderPl = FileDownloader() //TODO inject instead
+    
     private let fileManager = FileManager.default
     
     private enum DownloadStatus {
@@ -85,6 +87,7 @@ actor FileDownloader: FileDownloaderPl {
             )
             downloads[url] = .done
         } catch {
+            print(error.localizedDescription)
             downloads[url] = .failed
             throw error
         }
