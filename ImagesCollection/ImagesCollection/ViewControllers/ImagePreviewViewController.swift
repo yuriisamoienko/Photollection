@@ -9,14 +9,28 @@ import UIKit
 
 final class ImagePreviewViewController: UIViewController {
 
+    @IBOutlet private weak var infoLabel: UILabel!
     @IBOutlet private weak var blurRatioSlider: UISlider!
     @IBOutlet private weak var imageModeSegmentControl: UISegmentedControl!
     @IBOutlet private weak var imageView: UrlImageView!
+    
     private var imageEndpoint: PicsumPhotoEndpoint?
+    private lazy var imageInfoEndpoint: PhotoInfoEndpoint = .init(id: 0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         blurRatioSlider.isHidden = true
+        infoLabel.isHidden = true
+        
+        Task {
+            do {
+                let info = try await imageInfoEndpoint.getInfo()
+                infoLabel.text = info.description
+                infoLabel.isHidden = false
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -28,6 +42,7 @@ final class ImagePreviewViewController: UIViewController {
     
     func set(imageEndpoint: PicsumPhotoEndpoint) {
         self.imageEndpoint = imageEndpoint
+        imageInfoEndpoint.id = imageEndpoint.id
     }
     
     

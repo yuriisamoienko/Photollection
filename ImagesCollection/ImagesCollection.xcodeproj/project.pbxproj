@@ -28,6 +28,7 @@
 		5AFA3DE629425D5600E878C4 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFA3DE529425D5600E878C4 /* Endpoints.swift */; };
 		5AFA3DE82942627A00E878C4 /* PicsumPhotoEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFA3DE72942627A00E878C4 /* PicsumPhotoEndpoint.swift */; };
 		5AFA3DEA29426CEF00E878C4 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFA3DE929426CEF00E878C4 /* StringExtension.swift */; };
+		5AFA3DEC2942849400E878C4 /* PhotoInfoEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFA3DEB2942849400E878C4 /* PhotoInfoEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		5AFA3DE529425D5600E878C4 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		5AFA3DE72942627A00E878C4 /* PicsumPhotoEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumPhotoEndpoint.swift; sourceTree = "<group>"; };
 		5AFA3DE929426CEF00E878C4 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		5AFA3DEB2942849400E878C4 /* PhotoInfoEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfoEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +222,7 @@
 			children = (
 				5AFA3DE529425D5600E878C4 /* Endpoints.swift */,
 				5AFA3DE72942627A00E878C4 /* PicsumPhotoEndpoint.swift */,
+				5AFA3DEB2942849400E878C4 /* PhotoInfoEndpoint.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				5AD918AC2942035000078C26 /* DynamicCollectionViewFlowLayout.swift in Sources */,
 				5AD9188F29410C0E00078C26 /* ImagesCollectionViewController.swift in Sources */,
 				5AD918B52942115F00078C26 /* FileManagerExtension.swift in Sources */,
+				5AFA3DEC2942849400E878C4 /* PhotoInfoEndpoint.swift in Sources */,
 				5AFA3DE82942627A00E878C4 /* PicsumPhotoEndpoint.swift in Sources */,
 				5AD9189429410F2500078C26 /* PhotoCollectionViewCell.swift in Sources */,
 				5AD918B329420F8000078C26 /* FileDownloader.swift in Sources */,

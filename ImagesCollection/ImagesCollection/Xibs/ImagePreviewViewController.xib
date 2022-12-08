@@ -14,6 +14,7 @@
                 <outlet property="blurRatioSlider" destination="w6n-lM-mZy" id="bAt-9f-Zm9"/>
                 <outlet property="imageModeSegmentControl" destination="d0E-vT-xYj" id="oa3-Y7-hUf"/>
                 <outlet property="imageView" destination="Ppz-2f-is8" id="EX4-d6-hdv"/>
+                <outlet property="infoLabel" destination="sMP-IX-ZWx" id="26V-eI-TSc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -54,6 +55,17 @@
                         <action selector="onBlurRatioChanged:" destination="-1" eventType="valueChanged" id="EXZ-Xs-NsS"/>
                     </connections>
                 </slider>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMP-IX-ZWx" userLabel="infoLabel">
+                    <rect key="frame" x="5" y="64" width="42" height="21"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="DoK-BX-2Mo"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="tPv-if-pMf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -64,7 +76,9 @@
                 <constraint firstItem="d0E-vT-xYj" firstAttribute="top" secondItem="w6n-lM-mZy" secondAttribute="bottom" constant="36" id="I21-Om-MJn"/>
                 <constraint firstItem="Ppz-2f-is8" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="IDm-iQ-44p"/>
                 <constraint firstItem="w6n-lM-mZy" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="SVM-2n-jx4"/>
+                <constraint firstItem="sMP-IX-ZWx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="TIP-Ja-sgm"/>
                 <constraint firstItem="Ppz-2f-is8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Zcg-CE-sC0"/>
+                <constraint firstItem="sMP-IX-ZWx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="bvC-9l-7fG"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="d0E-vT-xYj" secondAttribute="bottom" constant="24" id="klf-Uo-KNF"/>
             </constraints>
             <point key="canvasLocation" x="-129.00763358778624" y="-1.4084507042253522"/>
