@@ -15,6 +15,8 @@ struct PicsumPhotoEndpoint: EndpointPl {
         case grayscaled
     }
     
+    // MARK: Properties
+    
     var id: UInt
     var width: UInt
     var height: UInt
@@ -47,6 +49,8 @@ struct PicsumPhotoEndpoint: EndpointPl {
 
 extension PicsumPhotoEndpoint {
     
+    // MARK: Properties
+    
     var size: CGSize {
         set {
             width = UInt(newValue.width)
@@ -59,6 +63,8 @@ extension PicsumPhotoEndpoint {
             )
         }
     }
+    
+    // MARK: Functions
     
     init(id: Int, size: CGSize) {
         self.init(id: UInt(id), width: UInt(size.width), height: UInt(size.height))

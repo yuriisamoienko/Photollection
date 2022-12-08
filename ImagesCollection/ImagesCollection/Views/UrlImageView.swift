@@ -8,6 +8,8 @@
 import UIKit
 
 final class UrlImageView: UIImageView {
+    
+    // MARK: Private Properties
 
     private let fileDownloader: FileDownloaderPl = FileDownloader.shared //TODO inject
     private var imageUrl: URL? {
@@ -16,6 +18,8 @@ final class UrlImageView: UIImageView {
         }
     }
     private var needUpdateImage = true
+    
+    // MARK: Functions
     
     func set(imageUrl: URL?) {
         needUpdateImage = true

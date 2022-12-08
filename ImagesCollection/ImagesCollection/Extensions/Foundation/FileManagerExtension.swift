@@ -9,6 +9,8 @@ import Foundation
 
 extension FileManager {
     
+    // MARK: Properties
+    
     var documentsDirectory: URL {
         let paths = urls(for: .documentDirectory, in: .userDomainMask)
         let documentsDirectory = paths[0]

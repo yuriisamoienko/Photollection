@@ -9,6 +9,8 @@ import Foundation
 
 struct PhotoInfoEndpoint: EndpointPl {
     
+    // MARK: Properties
+    
     var id: UInt
     
     var baseUrl: String {
@@ -44,6 +46,8 @@ extension PhotoInfoEndpoint {
             """
         }
     }
+    
+    // MARK: Functions
     
     func getInfo() async throws -> Info {
         guard let url = self.url else {

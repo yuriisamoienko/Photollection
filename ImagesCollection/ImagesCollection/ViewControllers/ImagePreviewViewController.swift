@@ -8,14 +8,20 @@
 import UIKit
 
 final class ImagePreviewViewController: UIViewController {
+    
+    // MARK: Private Properties
+    
+    private var imageEndpoint: PicsumPhotoEndpoint?
+    private lazy var imageInfoEndpoint: PhotoInfoEndpoint = .init(id: 0)
+    
+    // Outlets
 
     @IBOutlet private weak var infoLabel: UILabel!
     @IBOutlet private weak var blurRatioSlider: UISlider!
     @IBOutlet private weak var imageModeSegmentControl: UISegmentedControl!
     @IBOutlet private weak var imageView: UrlImageView!
     
-    private var imageEndpoint: PicsumPhotoEndpoint?
-    private lazy var imageInfoEndpoint: PhotoInfoEndpoint = .init(id: 0)
+    // MARK: Overriden Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,20 +46,14 @@ final class ImagePreviewViewController: UIViewController {
         refreshImage()
     }
     
+    // MARK: Functions
+    
     func set(imageEndpoint: PicsumPhotoEndpoint) {
         self.imageEndpoint = imageEndpoint
         imageInfoEndpoint.id = imageEndpoint.id
     }
     
-    
-    @IBAction private func onBlurRatioChanged(_ sender: UISlider) {
-        refreshImage()
-    }
-    
-    
-    @IBAction private func onImageModeChanged(_ sender: UISegmentedControl) {
-        refreshImage()
-    }
+    // MARK: Private Functions
     
     private func refreshImage() {
         switch imageModeSegmentControl.selectedSegmentIndex {
@@ -76,6 +76,17 @@ final class ImagePreviewViewController: UIViewController {
         imageEndpoint?.size = imageView.frame.size // to load an image with correct size
         guard let url = imageEndpoint?.url else { return }
         imageView.set(imageUrl: url)
+    }
+    
+    // IBActions
+    
+    @IBAction private func onBlurRatioChanged(_ sender: UISlider) {
+        refreshImage()
+    }
+    
+    
+    @IBAction private func onImageModeChanged(_ sender: UISegmentedControl) {
+        refreshImage()
     }
     
 }

@@ -11,6 +11,8 @@ private let reuseIdentifier = "PhotoCollectionViewCell"
 
 public final class ImagesCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
+    // MARK: Overriden Functions
+    
     override public func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,13 +26,6 @@ public final class ImagesCollectionViewController: UICollectionViewController, U
         // Register cell classes
         collectionView.register(UINib(nibName: "PhotoCollectionViewCell", bundle: .current), forCellWithReuseIdentifier: reuseIdentifier)
     }
-    
-    private let columnLayout = DynamicCollectionViewFlowLayout(
-        cellsPerRow: .init(portrait: 3, landscape: 6),
-        minimumInteritemSpacing: 10,
-        minimumLineSpacing: 10,
-        sectionInset: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
-    )
 
     // MARK: UICollectionViewDataSource
 
@@ -61,5 +56,14 @@ public final class ImagesCollectionViewController: UICollectionViewController, U
         vc.set(imageEndpoint: PicsumPhotoEndpoint(id: indexPath.row, size: .zero))
         navigationController?.pushViewController(vc, animated: true)
     }
+    
+    // MARK: Private Properties
+    
+    private let columnLayout = DynamicCollectionViewFlowLayout(
+        cellsPerRow: .init(portrait: 3, landscape: 6),
+        minimumInteritemSpacing: 10,
+        minimumLineSpacing: 10,
+        sectionInset: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+    )
     
 }

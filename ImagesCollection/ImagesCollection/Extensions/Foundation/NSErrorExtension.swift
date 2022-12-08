@@ -9,6 +9,8 @@ import Foundation
 
 extension NSError {
     
+    // MARK: Functions
+    
     convenience init(code: Int = 0, message: String) {
         self.init(domain: "", code: code, userInfo: [NSLocalizedDescriptionKey: message])
     }

@@ -9,7 +9,10 @@ import Foundation
 
 extension String {
     
+    // MARK: Functions
+    
     func urlEncoded() -> String {
         addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? self
     }
+    
 }

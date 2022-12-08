@@ -9,6 +9,8 @@ import UIKit
 import ImagesCollection
 
 final class ViewController: UIViewController {
+    
+    // MARK: Overriden Functions
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

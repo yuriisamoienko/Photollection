@@ -8,12 +8,16 @@
 import UIKit
 
 final class DynamicCollectionViewFlowLayout: UICollectionViewFlowLayout {
+    
+    // MARK: Private Properties
 
     private let cellsPerRow: UIInterfaceOrientationValues
     
     private var windowInterfaceOrientation: UIInterfaceOrientation {
         return UIApplication.shared.windows.first?.windowScene?.interfaceOrientation ?? .portrait //TODO fix warning
     }
+    
+    // MARK: Functions
 
     init(cellsPerRow: UIInterfaceOrientationValues, minimumInteritemSpacing: CGFloat = 0, minimumLineSpacing: CGFloat = 0, sectionInset: UIEdgeInsets = .zero) {
         self.cellsPerRow = cellsPerRow
@@ -27,6 +31,8 @@ final class DynamicCollectionViewFlowLayout: UICollectionViewFlowLayout {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    // MARK: Overriden functions
 
     override func prepare() {
         super.prepare()

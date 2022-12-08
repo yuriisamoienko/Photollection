@@ -9,6 +9,8 @@ import Foundation
 
 extension Bundle {
     
+    // MARK: Properties
+    
     static var current: Bundle {
         Bundle(for: ThisBundleClass.self)
     }

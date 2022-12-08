@@ -7,7 +7,9 @@
 
 import UIKit
 
-public extension UIViewController {
+extension UIViewController {
+    
+    // MARK: Static Functions
     
     static func loadFromXib(_ xibName: String, bundle: Bundle = .main) -> Self {
         let result = Self.init(nibName: xibName, bundle: bundle)

@@ -23,6 +23,8 @@ enum HttpMethod {
 
 extension EndpointPl {
     
+    // MARK: Properties
+    
     var absoluteString: String {
         var result = "\(baseUrl)/\(path)"
         switch httpMethod {

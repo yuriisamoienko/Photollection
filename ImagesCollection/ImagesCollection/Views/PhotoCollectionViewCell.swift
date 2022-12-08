@@ -9,16 +9,22 @@ import UIKit
 
 final class PhotoCollectionViewCell: UICollectionViewCell {
     
+    // MARK: Private Properties
+    
     @IBOutlet private weak var imageView: UrlImageView! {
         didSet {
             imageView.updateImageIfNeeded()
         }
     }
     
+    // MARK: Overriden Functions
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    // MARK: Functions
     
     func reset() {
         imageView.image = UIImage(systemName: "doc.circle")

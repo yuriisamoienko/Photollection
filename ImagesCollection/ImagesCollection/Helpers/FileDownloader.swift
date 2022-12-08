@@ -8,12 +8,18 @@
 import Foundation
 
 protocol FileDownloaderPl {
+    
     func load(from url: URL) async throws -> Data
+    
 }
 
 actor FileDownloader: FileDownloaderPl {
     
+    // MARK: Properties
+    
     static let shared: FileDownloaderPl = FileDownloader() //TODO inject instead
+    
+    // MARK: Private Properties
     
     private let fileManager = FileManager.default
     

@@ -9,6 +9,8 @@ import UIKit
 
 extension UICollectionView {
     
+    // MARK: Functions
+    
     func dequeueReusableCell<Type: UICollectionViewCell>(byType cellType: Type.Type, forIndexPath indexPath: IndexPath) throws -> Type {
         let cellTypeString = String(describing: cellType)
         let cell = dequeueReusableCell(withReuseIdentifier: cellTypeString, for: indexPath)
