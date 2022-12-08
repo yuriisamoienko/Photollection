@@ -18,6 +18,7 @@
 		5AD918482941033D00078C26 /* PhotollectionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD918472941033D00078C26 /* PhotollectionUITestsLaunchTests.swift */; };
 		5AD91886294107A700078C26 /* ImagesCollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD91885294107A700078C26 /* ImagesCollection.framework */; };
 		5AD91887294107A700078C26 /* ImagesCollection.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD91885294107A700078C26 /* ImagesCollection.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5AD918A629411FBC00078C26 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD918A529411FBC00078C26 /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		5AD918452941033D00078C26 /* PhotollectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotollectionUITests.swift; sourceTree = "<group>"; };
 		5AD918472941033D00078C26 /* PhotollectionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotollectionUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5AD91885294107A700078C26 /* ImagesCollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ImagesCollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AD918A229411DDD00078C26 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		5AD918A529411FBC00078C26 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 		5AD918232941033C00078C26 /* Photollection */ = {
 			isa = PBXGroup;
 			children = (
+				5AD918A329411FAB00078C26 /* Extension */,
+				5AD918A129411DC200078C26 /* Supporing FIles */,
 				5AD918582941063300078C26 /* Configs */,
 				5AD918572941040500078C26 /* ViewControllers */,
 				5AD91856294103EC00078C26 /* Storyboards */,
@@ -192,6 +197,30 @@
 				5AD91885294107A700078C26 /* ImagesCollection.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5AD918A129411DC200078C26 /* Supporing FIles */ = {
+			isa = PBXGroup;
+			children = (
+				5AD918A229411DDD00078C26 /* README.md */,
+			);
+			path = "Supporing FIles";
+			sourceTree = "<group>";
+		};
+		5AD918A329411FAB00078C26 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5AD918A429411FB100078C26 /* UIKit */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		5AD918A429411FB100078C26 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				5AD918A529411FBC00078C26 /* UIViewControllerExtension.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AD918A629411FBC00078C26 /* UIViewControllerExtension.swift in Sources */,
 				5AD918292941033C00078C26 /* ViewController.swift in Sources */,
 				5AD918252941033C00078C26 /* AppDelegate.swift in Sources */,
 				5AD918272941033C00078C26 /* SceneDelegate.swift in Sources */,
@@ -520,9 +550,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "iosdeveloper-232362.Photollection";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -548,9 +581,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "iosdeveloper-232362.Photollection";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
