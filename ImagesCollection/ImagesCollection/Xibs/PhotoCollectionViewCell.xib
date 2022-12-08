@@ -15,7 +15,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="242" height="149"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doc.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7Us-5d-qot">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doc.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7Us-5d-qot" customClass="UrlImageView" customModule="ImagesCollection" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="1" width="242" height="147.66666666666666"/>
                     </imageView>
                 </subviews>

@@ -22,6 +22,11 @@
 		5AD918B0294209A200078C26 /* UIInterfaceOrientationValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD918AF294209A200078C26 /* UIInterfaceOrientationValues.swift */; };
 		5AD918B329420F8000078C26 /* FileDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD918B229420F8000078C26 /* FileDownloader.swift */; };
 		5AD918B52942115F00078C26 /* FileManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD918B42942115F00078C26 /* FileManagerExtension.swift */; };
+		5AD918B8294241EB00078C26 /* ImagePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD918B6294241EB00078C26 /* ImagePreviewViewController.swift */; };
+		5AFA3DE12942422700E878C4 /* ImagePreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AFA3DE02942422700E878C4 /* ImagePreviewViewController.xib */; };
+		5AFA3DE329424A4200E878C4 /* UrlImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFA3DE229424A4200E878C4 /* UrlImageView.swift */; };
+		5AFA3DE629425D5600E878C4 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFA3DE529425D5600E878C4 /* Endpoints.swift */; };
+		5AFA3DE82942627A00E878C4 /* PicsumPhotoEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFA3DE72942627A00E878C4 /* PicsumPhotoEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		5AD918AF294209A200078C26 /* UIInterfaceOrientationValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIInterfaceOrientationValues.swift; sourceTree = "<group>"; };
 		5AD918B229420F8000078C26 /* FileDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDownloader.swift; sourceTree = "<group>"; };
 		5AD918B42942115F00078C26 /* FileManagerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtension.swift; sourceTree = "<group>"; };
+		5AD918B6294241EB00078C26 /* ImagePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewViewController.swift; sourceTree = "<group>"; };
+		5AFA3DE02942422700E878C4 /* ImagePreviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImagePreviewViewController.xib; sourceTree = "<group>"; };
+		5AFA3DE229424A4200E878C4 /* UrlImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlImageView.swift; sourceTree = "<group>"; };
+		5AFA3DE529425D5600E878C4 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		5AFA3DE72942627A00E878C4 /* PicsumPhotoEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumPhotoEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,7 @@
 		5AD918652941073800078C26 /* ImagesCollection */ = {
 			isa = PBXGroup;
 			children = (
+				5AFA3DE429425D3C00E878C4 /* Networking */,
 				5AD918B129420F5C00078C26 /* Helpers */,
 				5AD918AE2942099400078C26 /* Data Types */,
 				5AD918AD2942080600078C26 /* Layouts */,
@@ -133,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				5AD9188D29410C0E00078C26 /* ImagesCollectionViewController.swift */,
+				5AD918B6294241EB00078C26 /* ImagePreviewViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -140,6 +152,7 @@
 		5AD9188C29410BA600078C26 /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
+				5AFA3DE02942422700E878C4 /* ImagePreviewViewController.xib */,
 				5AD9189329410F2500078C26 /* PhotoCollectionViewCell.xib */,
 				5AD9188E29410C0E00078C26 /* ImagesCollectionViewController.xib */,
 			);
@@ -150,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				5AD9189229410F2500078C26 /* PhotoCollectionViewCell.swift */,
+				5AFA3DE229424A4200E878C4 /* UrlImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -204,6 +218,15 @@
 				5AD918B229420F8000078C26 /* FileDownloader.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5AFA3DE429425D3C00E878C4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				5AFA3DE529425D5600E878C4 /* Endpoints.swift */,
+				5AFA3DE72942627A00E878C4 /* PicsumPhotoEndpoint.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +324,7 @@
 			files = (
 				5AD9189029410C0E00078C26 /* ImagesCollectionViewController.xib in Resources */,
 				5AD9189529410F2500078C26 /* PhotoCollectionViewCell.xib in Resources */,
+				5AFA3DE12942422700E878C4 /* ImagePreviewViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,13 +344,17 @@
 			files = (
 				5AD918B0294209A200078C26 /* UIInterfaceOrientationValues.swift in Sources */,
 				5AD9189C29411AF200078C26 /* UICollectionViewExtension.swift in Sources */,
+				5AFA3DE629425D5600E878C4 /* Endpoints.swift in Sources */,
+				5AFA3DE329424A4200E878C4 /* UrlImageView.swift in Sources */,
 				5AD9189E29411B2D00078C26 /* NSObjectExtension.swift in Sources */,
 				5AD918AC2942035000078C26 /* DynamicCollectionViewFlowLayout.swift in Sources */,
 				5AD9188F29410C0E00078C26 /* ImagesCollectionViewController.swift in Sources */,
 				5AD918B52942115F00078C26 /* FileManagerExtension.swift in Sources */,
+				5AFA3DE82942627A00E878C4 /* PicsumPhotoEndpoint.swift in Sources */,
 				5AD9189429410F2500078C26 /* PhotoCollectionViewCell.swift in Sources */,
 				5AD918B329420F8000078C26 /* FileDownloader.swift in Sources */,
 				5AD918992941198A00078C26 /* BundleExtension.swift in Sources */,
+				5AD918B8294241EB00078C26 /* ImagePreviewViewController.swift in Sources */,
 				5AD918A029411BAE00078C26 /* NSErrorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
